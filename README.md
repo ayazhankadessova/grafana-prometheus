@@ -14,9 +14,11 @@ Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we or
 
 2. Login to Grafana
 
-3. Import Dashboard
+3. Add Prometheus Data Source named `Prometheus-HTTP-CPU` with Prometheus Server URL: https://demo.promlabs.com
 
-4. Upload `Http_Cpu-1692340715847.json`.
+4. Import Dashboard
+
+5. Upload `Http_Cpu-1692340715847.json`.
 
 ## Steps to Create a Simple Grafana Dashboard for Prometheus
 
