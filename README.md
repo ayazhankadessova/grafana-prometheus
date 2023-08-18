@@ -50,11 +50,15 @@ http://localhost:3000/?orgId=1
 
 - admin , admin
 
+*To query and visualize data from a Prometheus-compatible backend in a Grafana dashboard, we will first need to configure a Prometheus data source in Grafana.*
+
 ## 4. Add Prometheus as a Data Source Type
 
 - Change Data Source name + make it default
 
-- https://demo.promlabs.com/
+- Prometheus Server URL: https://demo.promlabs.com/
+
+- This points the data source at the public PromLabs demo Prometheus server.
 
 *Now Grafana is all set up to send promql queries to Prometheus.*
 
