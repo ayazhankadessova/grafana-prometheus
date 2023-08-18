@@ -49,3 +49,22 @@ http://localhost:3000/?orgId=1
 ## 7. Configure unit
 
 - seconds -> check y-axis, which now shows ms
+
+## 4a. Gauge Visualization
+
+1. Enter a PromQL query that shows us CPU usage for three different demo services.
+
+- Query:
+
+```
+sum by(instance) (rate(demo_cpu_usage_seconds_total{mode!="idle"}[5m])) / on(instance) demo_num_cpus
+```
+
+2. Set min and max: 0 and 1
+3. Change unit to percentage (0-1)
+4. Color code using thresholds:
+
+- 80%+ CPU usage is high -> red 0.8
+- Others are green
+
+* Now we can see where the red region would begin
