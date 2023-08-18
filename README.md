@@ -98,3 +98,20 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
 5. Choose unit for Panel
 
 - RPS (requests per second)
+
+## 5. Organize Panels within a Dashboard into Thematic Rows
+
+1. Group two HTTP stats panels into one row and the CPU stats into another.
+
+- Add Panel -> Add a new row -> Rename the row -> HTTP stats
+- Add Panel -> Add a new row -> Rename the row -> CPU stats
+
+2. Grab each panel by its title bar and drag it into the right row.
+
+3. You can collapse the rows by clicking on them.
+
+4. You can also drag them around using the right hand side handles to reorder them on the dashboard.
+
+## 6. Save the dashboard
+
+- Give it a name -> Hit `Save`
