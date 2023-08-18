@@ -360,8 +360,8 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Ayazhan's HTTP and CPU Dashboard",
+  "title": "Http_Cpu",
   "uid": "f4a72e41-2685-4709-9df4-8266a6cca3af",
-  "version": 3,
+  "version": 4,
   "weekStart": ""
 }
