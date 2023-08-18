@@ -1,6 +1,4 @@
-<h2 align="center">
- <img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">Monitoring using Grafana Dashboards for Prometheus<img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">
-</h2>
+## Monitoring using Grafana Dashboards for Prometheus
 
 `Site Reliability Engineering(SRE)`, `Grafana`, `Prometheus`, `Monitoring`
 
@@ -175,3 +173,5 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
 - Give it a name -> Hit `Save`
   
 ## 8. Export `.json` for backup.
+
+
