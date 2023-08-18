@@ -68,3 +68,33 @@ sum by(instance) (rate(demo_cpu_usage_seconds_total{mode!="idle"}[5m])) / on(ins
 - Others are green
 
 * Now we can see where the red region would begin
+
+## 4c. Table Visualization
+
+1. Enter a PromQL query that Selects Top-3 Requests rates that our demo service is getting in the range vector, grouped by path and method labels.
+
+- Query:
+
+```
+topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m])))
+```
+
+- We see different values over time for a single selected time series. We can select which time series to show, but we would actually like to see all time series at once and only the latest value for each one.
+
+2. Change Format Option: Time Series -> Table.
+
+3. Change Query Type: Range -> Instant. (Only fetches one latest value for each series)
+
+4. Remove the TimeStamp since it always will be the latest value.
+
+- Method #1:
+
+* Transform -> Organize Fields -> Hide `Time`.
+
+- Method #2:
+
+* Scroll all the way down in the panel options -> `Add Field Override` -> `Fields with Type` -> `Time` -> `Add Override Property` -> `Hide in Table` -> `Enable Override`
+
+5. Choose unit for Panel
+
+- RPS (requests per second)
