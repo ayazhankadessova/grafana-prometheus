@@ -2,7 +2,7 @@
  <img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">Monitoring using Grafana Dashboards for Prometheus<img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">
 </h2>
 
-`Site Reliability Engineering(SRE), `Grafana`, `Prometheus`, `Monitoring`
+`Site Reliability Engineering(SRE)`, `Grafana`, `Prometheus`, `Monitoring`
 
 ## Overview 
 
