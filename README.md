@@ -10,11 +10,13 @@ Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we or
 
 ## Import my Grafana Dashboard
 
-1. Login to Grafana
+1. Save `Http_Cpu-1692340715847.json`
 
-2. Import Dashboard
+2. Login to Grafana
 
-3. Upload `Ayazhan's HTTP and CPU Dashboard-1692339297391.json`.
+3. Import Dashboard
+
+4. Upload `Http_Cpu-1692340715847.json`.
 
 ## Steps to Create a Simple Grafana Dashboard for Prometheus
 
