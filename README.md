@@ -1,4 +1,4 @@
-## Monitoring using Grafana Dashboards for Prometheus
+## 📈 Monitoring using Grafana Dashboards for Prometheus 📈
 
 `Site Reliability Engineering(SRE)`, `Grafana`, `Prometheus`, `Monitoring`
 
@@ -12,7 +12,17 @@ The dashboard composed of three distinct panels:
 2. **A gauge display**: CPU Usage for three different demo services.
 3. **A data table**: Top 3 request rates that demo service is getting grouped by path and method lablels.
 
+<p align="center">
+<img src="https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/5c969550-a5df-477b-b87d-97f8992fc15c" width="700" alt="Grafana Dashboard">
+</p>
+
 All data was accessed via the PromLabs' public [Prometheus server](https://demo.promlabs.com/).
+
+## Snapshot Link
+
+- Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1).
+
+*A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
 
 ## What I Learned
 
@@ -23,15 +33,6 @@ All data was accessed via the PromLabs' public [Prometheus server](https://demo.
 - Building PromQL queries
 - Transforming data
 - Organizing Panels
-
-## Link & Demo
-
-- Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1).
-
-*A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
-
-- Demo:
-![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/5c969550-a5df-477b-b87d-97f8992fc15c)
 
 ## Import my Grafana Dashboard
 
@@ -45,7 +46,7 @@ All data was accessed via the PromLabs' public [Prometheus server](https://demo.
 
 5. Upload `Http_Cpu-1692340715847.json`.
 
-## Steps to Create a Simple Grafana Dashboard for Prometheus
+## 📝 Steps to Create a Simple Grafana Dashboard for Prometheus
 
 ## 1. Install Grafana
 
@@ -174,4 +175,11 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
   
 ## 8. Export `.json` for backup.
 
+## Author
 
+- [@ayazhankadessova](https://github.com/ayazhankadessova)
+- [Linkedin](https://www.linkedin.com/in/ayazhankad/)
+
+## About Me
+
+I'm aspiring Software Developer/Site reliability Engineer from Kazakhstan, studying in Hong Kong.
