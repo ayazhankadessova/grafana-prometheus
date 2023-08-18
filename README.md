@@ -1,17 +1,38 @@
 <h2 align="center">
- <img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">Grafana Dashboards for Prometheus<img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">
+ <img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">Monitoring using Grafana Dashboards for Prometheus<img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">
 </h2>
 
-`Javascript`, `HTML`, `CSS`, `OpenAI (openai.createCompletion, openai.createImage)`, `API`, `Vite`, `Dall-E`, `text-davinci-003`
+`Site Reliability Engineering(SRE), `Grafana`, `Prometheus`, `Monitoring`
 
-Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we organized our panels inti rows.
+## Overview 
+
+This project entailed forming a monitoring dashboard in Grafana using Prometheus as a data source. 
+
+The dashboard composed of three distinct panels: 
+
+1. A time-series chart: 95th percentile request latency for every path and method.
+2. A gauge display: CPU Usage for three different demo services.
+3. A data table: Top 3 request rates that demo service is getting grouped by path and method lablels.
+
+All data was accessed via the PromLabs' public [Prometheus server](https://demo.promlabs.com/).
+
+## What I Learned
+
+- Setting Up Grafana
+- Creating a Prometheus data source in Grafana
+- Creating a Dashboard
+- Creating different panels
+- Building PromQL queries
+- Transforming data
+- Organizing Panels
+
+## Link & Demo
 
 - Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1).
 
 *A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
 
 - Demo:
-  
 ![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/5c969550-a5df-477b-b87d-97f8992fc15c)
 
 ## Import my Grafana Dashboard
