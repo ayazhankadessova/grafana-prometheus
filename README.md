@@ -20,6 +20,11 @@ Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we or
 
 ## 1. Install Grafana
 
+* MacOS:
+```
+brew install grafana
+```
+
 ## 2. Run Grafana:
 
 - Run Grafana Using Docker
@@ -30,10 +35,6 @@ docker run -p 3000:30000 --name=grafana-storage:/var/lib/grafana grafana/grafana
 - Running Grafana Using Pre-Built Binaries 
 
 * Install from [Grafana.com[(https://grafana.com)
-* MacOS:
-```
-brew install grafana
-```
 ```
 brew services start grafana
 ```
