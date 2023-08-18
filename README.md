@@ -1,3 +1,9 @@
+<h2 align="center">
+ <img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">Grafana Dashboards for Prometheus<img src="https://media.giphy.com/media/fGL6oc26zsv6sA1sLx/giphy.gif" width="90">
+</h2>
+
+`Javascript`, `HTML`, `CSS`, `OpenAI (openai.createCompletion, openai.createImage)`, `API`, `Vite`, `Dall-E`, `text-davinci-003`
+
 Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we organized our panels inti rows.
 
 - Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1).
