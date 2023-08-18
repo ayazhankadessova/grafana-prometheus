@@ -1,6 +1,12 @@
 Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we organized our panels inti rows.
 
-https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1
+- Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1).
+
+*A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
+
+- Demo:
+  
+![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/5c969550-a5df-477b-b87d-97f8992fc15c)
 
 ## Import my Grafana Dashboard
 
@@ -10,59 +16,62 @@ https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK
 
 3. Upload `Ayazhan's HTTP and CPU Dashboard-1692339297391.json`.
 
-## Create a Simple Grafana Dashboard for Prometheus
+## Steps to Create a Simple Grafana Dashboard for Prometheus
 
 ## 1. Install Grafana
 
--via docker
+## 2. Run Grafana:
 
+- Run Grafana Using Docker
 ```
 docker run -p 3000:30000 --name=grafana-storage:/var/lib/grafana grafana/grafana
 ```
 
-## 2. Via Grafana Binaries
+- Running Grafana Using Pre-Built Binaries 
 
-- Install from here
-
+* Install from [Grafana.com[(https://grafana.com)
+* MacOS:
+```
+brew install grafana
+```
 ```
 brew services start grafana
 ```
-
 ```
 http://localhost:3000/?orgId=1
 ```
 
-## 3. Add Prometheus as a Data Source Type
+## 3. Log Into Grafana
 
-- Change DS name + make it default
+- admin , admin
+
+## 4. Add Prometheus as a Data Source Type
+
+- Change Data Source name + make it default
 
 - https://demo.promlabs.com/
 
-- Now Grafana is all set up to send promql queries to Prometheus
+*Now Grafana is all set up to send promql queries to Prometheus.*
 
-## 4. Create a Dashboard
+## 5. Create a Dashboard
 
-## 4a. Time Series Visualization
+## 5a. Time Series Visualization
 
 - Dashboard -> new
 - Create a panel -> Select Data Source
 - Edit promql by selecting metric
-
-## Make a query with build & with code for the last 30 mins
+- Make a query with build & with code for the last 30 mins.
 
 > histogram_quantile(0.95, sum by(le, method, path) (rate(demo_api_request_duration_seconds_bucket[$__rate_interval])))
-
-## 6. Change the legend & play with options
-
+- Change the legend & play with options
 - Verbose -> Custom
-- Legend v1: {{label_name}} : {method="GET", path="/api/foo"}
-- Legend v2: {{path}}-{{method}} : /api/foo-GET
+* Legend v1: {{label_name}} : {method="GET", path="/api/foo"}
+* Legend v2: {{path}}-{{method}} : /api/foo-GET
 
-## 7. Configure unit
+- Configure unit
+* seconds -> check y-axis, which now shows ms
 
-- seconds -> check y-axis, which now shows ms
-
-## 4a. Gauge Visualization
+## 5b. Gauge Visualization
 
 1. Enter a PromQL query that shows us CPU usage for three different demo services.
 
@@ -81,7 +90,7 @@ sum by(instance) (rate(demo_cpu_usage_seconds_total{mode!="idle"}[5m])) / on(ins
 
 * Now we can see where the red region would begin
 
-## 4c. Table Visualization
+## 5c. Table Visualization
 
 1. Enter a PromQL query that Selects Top-3 Requests rates that our demo service is getting in the range vector, grouped by path and method labels.
 
@@ -111,7 +120,7 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
 
 - RPS (requests per second)
 
-## 5. Organize Panels within a Dashboard into Thematic Rows
+## 6. Organize Panels within a Dashboard into Thematic Rows
 
 1. Group two HTTP stats panels into one row and the CPU stats into another.
 
@@ -124,6 +133,8 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
 
 4. You can also drag them around using the right hand side handles to reorder them on the dashboard.
 
-## 6. Save the dashboard
+## 7. Save the dashboard
 
 - Give it a name -> Hit `Save`
+  
+## 8. Export `.json` for backup.
