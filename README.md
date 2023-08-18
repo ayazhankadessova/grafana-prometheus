@@ -12,9 +12,7 @@ The dashboard composed of three distinct panels:
 2. **A gauge display**: CPU Usage for three different demo services.
 3. **A data table**: Top 3 request rates that demo service is getting grouped by path and method lablels.
 
-<p align="center">
-<img src="https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/5c969550-a5df-477b-b87d-97f8992fc15c" width="700" alt="Grafana Dashboard">
-</p>
+![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/af066854-5c89-4088-9053-fcfd2c304a75)
 
 All data was accessed via the PromLabs' public [Prometheus server](https://demo.promlabs.com/).
 
