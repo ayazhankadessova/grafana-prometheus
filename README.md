@@ -58,18 +58,19 @@ http://localhost:3000/?orgId=1
 
 ## 5a. Time Series Visualization
 
-- Dashboard -> new
-- Create a panel -> Select Data Source
-- Edit promql by selecting metric
-- Make a query with build & with code for the last 30 mins.
+1. Dashboard -> new
+2. Create a panel -> Select Data Source
+3. Edit promql by selecting metric
+4. Make a query with build & with code for the last 30 mins.
 
 > histogram_quantile(0.95, sum by(le, method, path) (rate(demo_api_request_duration_seconds_bucket[$__rate_interval])))
-- Change the legend & play with options
+
+5. Change the legend & play with options
 - Verbose -> Custom
 * Legend v1: {{label_name}} : {method="GET", path="/api/foo"}
 * Legend v2: {{path}}-{{method}} : /api/foo-GET
 
-- Configure unit
+6. Configure unit
 * seconds -> check y-axis, which now shows ms
 
 ## 5b. Gauge Visualization
@@ -89,7 +90,7 @@ sum by(instance) (rate(demo_cpu_usage_seconds_total{mode!="idle"}[5m])) / on(ins
 - 80%+ CPU usage is high -> red 0.8
 - Others are green
 
-* Now we can see where the red region would begin
+*Now we can see where the red region would begin.*
 
 ## 5c. Table Visualization
 
