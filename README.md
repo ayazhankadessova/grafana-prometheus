@@ -24,7 +24,7 @@ All data was accessed via the PromLabs' public [Prometheus server](https://demo.
 
 *A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
 
-## What I Learned
+## 💡 What I Learned
 
 - Setting Up Grafana
 - Creating a Prometheus data source in Grafana
@@ -182,4 +182,4 @@ topk(3, sum by(path, method) (rate(demo_api_request_duration_seconds_count[5m]))
 
 ## About Me
 
-I'm aspiring Software Developer/Site reliability Engineer from Kazakhstan, studying in Hong Kong.
+👩‍💻 I'm aspiring Software Developer/Site reliability Engineer from Kazakhstan, studying in Hong Kong.
