@@ -1,5 +1,17 @@
 Grafana DashBoard with 3 Panels, showing a chart, a gauge, and a panel and we organized our panels inti rows.
 
+https://snapshots.raintank.io/dashboard/snapshot/Q2M0jFiQ8qr5lw1ExZzeFiqKk115eFK1
+
+## Import my Grafana Dashboard
+
+1. Login to Grafana
+
+2. Import Dashboard
+
+3. Upload `Ayazhan's HTTP and CPU Dashboard-1692339297391.json`.
+
+## Create a Simple Grafana Dashboard for Prometheus
+
 ## 1. Install Grafana
 
 -via docker
