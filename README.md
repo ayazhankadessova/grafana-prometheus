@@ -18,7 +18,7 @@ All data was accessed via the PromLabs' public [Prometheus server](https://demo.
 
 ## Snapshot Link
 
-- Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/1rsAekhRhtYtewOktUEdeHPIRi07yOb2).
+- Check out my Interactive [Grafana Dashboard Snapshot](https://snapshots.raintank.io/dashboard/snapshot/cRajkrott82ymEh52eNyGfXmY2JFNuuC).
 
 *A dashboard snapshot shares an interactive dashboard publicly. Grafana strips sensitive data such as queries (metric, template and annotation) and panel links, leaving only the visible metric data and series names embedded in the dashboard. Dashboard snapshots can be accessed by anyone with the link.*
 
