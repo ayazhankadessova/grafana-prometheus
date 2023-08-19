@@ -6,13 +6,12 @@
 
 This project entailed forming a monitoring dashboard in Grafana using Prometheus as a data source. 
 
-The dashboard composed of three distinct panels: 
+The dashboard composed of 7 distinct panels: 
 
-1. **A time-series chart**: 95th percentile request latency for every path and method.
-2. **A gauge display**: CPU Usage for three different demo services.
+1. **A time-series chart**: 95th percentile request latency for every path and method, Node Total Network Transmit Bytes, Node CPU, Node Disk I/O.
+2. **A gauge display**: CPU Usage for three different demo services, Total Node Memory.
 3. **A data table**: Top 3 request rates that demo service is getting grouped by path and method lablels.
-
-![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/af066854-5c89-4088-9053-fcfd2c304a75)
+![ayazhan-grafana-dashboard](https://github.com/ayazhankadessova/grafana-prometheus/assets/86869537/4bb4a94f-5bd3-479b-b200-bb493b062a93)
 
 All data was accessed via the PromLabs' public [Prometheus server](https://demo.promlabs.com/).
 
